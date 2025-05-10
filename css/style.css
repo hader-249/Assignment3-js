@@ -1,0 +1,83 @@
+*{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 600;
+    font-style: normal;  
+}
+body{
+    background-color: #F7ECDE;
+}
+::selection{
+    background-color: #FEC260;
+}
+
+h1{
+    color: rgb(53, 46, 40);
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+    width: fit-content;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background-color: #FEC260;
+    bottom: 10px;
+    left: 0px;
+    transition: all 350ms;
+    z-index: -1;
+}
+h1:hover::before{
+    height: 50%; 
+}
+h2 {
+    color: rgb(33, 37, 41);
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    width: fit-content;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.body{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+tbody td {
+    font-weight: 400;
+}
+.form-control:focus {
+        color: #212529;
+        border-color: #d99c39;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.btn-submit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+}
+.btn-visit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+.btn-delete {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+}
