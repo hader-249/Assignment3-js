@@ -29,7 +29,7 @@ function displaySite(index) {
     <table class="table mt-4 ">
             <tbody>
               <tr class="text-center">
-                <td>${index}</td>
+                <td>${index+1}</td>
                 <td>${sitesList[index].websiteName}</td>
                 <td> <button type="button" class=" btn  btn-visit " onclick = "visit()"> <i class="fa-solid fa-eye"></i>Visit</button></td>
                 <td> <button type="button" class=" btn  btn-delete px-2" onclick="deleteSite(${index})"> <i class="fa-solid fa-trash-can"></i> Delete </button> </td>
